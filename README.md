@@ -24,7 +24,7 @@ To execute the functions in a parallel way
 The code attached (file name.R) extracts 45 yearly drought facets (see Table below) from a model-based solar radiation-derived daily drought index (called SOLDI) whether the drought isuni modal or bimodal. This code has been applied on the North American Monsoon region over 1960-2024 where the data can be find here : Zenodo link 
 Reference publication : data paper link
 
-![Texte alternatif](https://github.com/LudwigBoussaroque/Test/blob/main/ACP_light_png.png)
+![Texte alternatif](https://github.com/LudwigBoussaroque/DRY_NAM/blob/main/Images/Figure_6_cropped.pdf)
 
 *Figure 1 : Flowchart of the DRY_NAM code process*
 
