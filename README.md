@@ -27,9 +27,9 @@ Drought is the major stressor affecting and defining arid and semi-arid regions 
 The code extracts 44 yearly drought features (see Table below) from a model-based solar radiation-derived daily drought index (called SOLDI) whether the drought dynamics is unimodal or bimodal. This code has been applied on the North American Monsoon region over 1960-2024. This dataset is called DRY_NAM and can be found here: **dataset link**
 More information in the reference data descriptor : **data paper link**
 
-![Texte alternatif](https://github.com/LudwigBoussaroque/DRY_NAM/blob/main/Images/Figure_6_cropped.pdf)
+![Texte alternatif](https://github.com/LudwigBoussaroque/DRY_NAM/blob/main/Images/Figure_6.png)
 
-*Figure 1 : Flowchart of the DRY_NAM code process*
+*Figure 1 : Flowchart describing the processing of SOLDI data up to the final tables*
 
 
 ## Features names, unit, and description
