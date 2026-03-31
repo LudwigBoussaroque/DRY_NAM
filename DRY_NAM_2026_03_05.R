@@ -1232,8 +1232,6 @@ process_file <- function(file, date, seq_years, DF, low_onset_threshold, low_off
       mod_offset_from_der <- which(wetting_curve_der[] == min(wetting_curve_der[], na.rm = TRUE))
       
       wetting_rate <- wetting_curve_der[mod_offset_from_der]
-      
-      lines(predict(loess_model, newdata = data_year), col = "red", lwd = 2)
       }
       
       # !!!
