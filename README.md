@@ -10,10 +10,10 @@ ref publication
   Contains images on the code process and drought features. **Figure_3:** "SOLar radiation-driven Drought Index (SOLDI) time series and LOESS smoothing as a function of day of the year for the year 2012 of the pixel (-96.25,31.12). Black lines show daily SOLDI values; the red line is the corresponding LOESS smoothing curve, and asterisks indicate the detected peaks by the code." ; **FIgure_4:** "Fitted curves over SOLar radiation-driven Drought Index (SOLDI) and drought facets for the pixel (-96.25,31.12). Solid black line represent the daily SOLDI values;  red curve indicates the fitting of the 1st drought drying phase; dark blue curve indicates the fitting curve of the 1st drought wetting phase; orange curve indicates the fitting curve of the 2nd drought drying phase; light blue curve indicates the fitting curve of the 2nd drought wetting phase; Triangles indicate drought onsets; crosses indicate drought offsets; black and grey horizontal dotted lines indicate drought thresholds; dark red, orange and yellow bold solid lines indicate respectively extreme, moderate and low drought durations; red and orange asterisks indicate 1st and 2nd drought peaks respectively. (a): Wetting.Phase.Duration: (b): Monsoon.Peak; (c): Dry.Monsoon.Duration; (d): Mod.Monsoon.Duration; (e): Wet.Monsoon.Duration; (f): Monsoon.Peak.DOY."; **Figure_5:** Characterization of a four-year multiyear drought over the 2010-2014 period of the pixel -104.25,33.62. The black curve represents daily SOLDI values; red curves indicate onset phases; blue curves indicate offset phases; horizontal yellow, orange and red lines represent respectively the low, moderate and extreme drought durations. Red asterisks are drought peaks; triangles represent onsets; black crosses represent offsets; horizontal black and grey dashed lines are the drought thresholds. ; **Figure_6:** "Flowchart describing the processing of SOLDI data up to the final table."
   
   ### "SWC_example_files"
-  Contains the 3 raw SWC daily values used in the reference article and applicable to the code as examples. **SWC_-101.55,18.12.csv:** Mainly unimodal drought dynamics (see Figire_2 (b)) ; **SWC_-104.25,33.62.csv:** example of a multiyear drought from 2011 to 2014 (see Figure_5) ; **SWC_-96.25,31.12.csv :** Mainly bimodal drought dynamics (see Figire_2 (a)).
+  Contains the 3 raw SWC daily values used in the reference article and applicable to the code as examples. **SWC_-101.55,18.12.csv:** mainly unimodal drought dynamics (see Figire_2 (b)) ; **SWC_-104.25,33.62.csv:** example of a multiyear drought from 2011 to 2014 (see Figure_5) ; **SWC_-96.25,31.12.csv :** mainly bimodal drought dynamics (see Figire_2 (a)).
   
   ### "DRY_NAM_2026_03_05.R"
-  The code contains these main parts :
+  The code used to extract the 44 drought features of the DRY_NAM dataset. It contains these main parts :
   - `1. Initializing the data frame`
   The final data frame is created
   - `2. Load the functions`
@@ -23,16 +23,16 @@ ref publication
   - `3.b. Execute the functions with 'parallel'`
   To execute the functions in a parallel way
 
-## DRY_NAM.R code description
-The code attached (file name.R) extracts 45 yearly drought facets (see Table below) from a model-based solar radiation-derived daily drought index (called SOLDI) whether the drought isuni modal or bimodal. This code has been applied on the North American Monsoon region over 1960-2024 where the data can be find here : Zenodo link 
-Reference publication : data paper link
+## DRY_NAM_2026_03_05.R code description
+The code extracts 44 yearly drought features (see Table below) from a model-based solar radiation-derived daily drought index (called SOLDI) whether the drought dynamics is unimodal or bimodal. This code has been applied on the North American Monsoon region over 1960-2024. This dataset is called DRY_NAM and can be found here: **dataset link**
+More information in the reference data descriptor : **data paper link**
 
 ![Texte alternatif](https://github.com/LudwigBoussaroque/DRY_NAM/blob/main/Images/Figure_6_cropped.pdf)
 
 *Figure 1 : Flowchart of the DRY_NAM code process*
 
 
-## Facets description
+## Features names, unit, and description
 | Feature                   | Units         | Description                                                                                                 |
 | ------------------------- | ------------- | ----------------------------------------------------------------------------------------------------------- |
 | First.Drying.Rate         | mm/day        | 1st drought maximum daily soil water loss                                                                   |
@@ -105,21 +105,22 @@ This code is under the CC0 1.0 Universal license. See [LICENSE](LICENSE)for more
 setwd("C:/Users/bouss/Desktop/PhD/Data_Monsoon")
 
 # Define the output directory
-output_dir <- "C:/Users/bouss/Desktop/"
+output_dir <- "C:/Users/bouss/Desktop/Data_Monsoon"
   
 # Load the files to process
 #files_to_process <-  c("")
 ```
   
-- Execute the `1. Initializing the data frame`
-- Execute the `2. Load the functions`
+- Execute the `1. Initializing the data frame` lines
+- Execute the `2. Load the functions` lines
 - Then decide whether to execute `3.a. Execute the functions with 'lapply'` or `3.b. Execute the functions with 'parallel'`.
 
 
-## Citation
+## Reference data descriptor
+**Data paper link**
 
 ## Contact
-
+ludwig.boussaroque@umontpellier.fr
 
 ![R Version](https://img.shields.io/badge/R-4.2-blue)
 ![Licence](https://img.shields.io/badge/Licence-MIT-green)
