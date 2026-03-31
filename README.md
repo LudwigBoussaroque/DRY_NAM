@@ -6,7 +6,7 @@ ref publication
 <!-- badges: end -->
 
 ## Project files
-  ### "Images"
+-  ### "Images"
   Contains images on the code process and drought features. **Figure_3:** "SOLar radiation-driven Drought Index (SOLDI) time series and LOESS smoothing as a function of day of the year for the year 2012 of the pixel (-96.25,31.12). Black lines show daily SOLDI values; the red line is the corresponding LOESS smoothing curve, and asterisks indicate the detected peaks by the code." ; **FIgure_4:** "Fitted curves over SOLar radiation-driven Drought Index (SOLDI) and drought facets for the pixel (-96.25,31.12). Solid black line represent the daily SOLDI values;  red curve indicates the fitting of the 1st drought drying phase; dark blue curve indicates the fitting curve of the 1st drought wetting phase; orange curve indicates the fitting curve of the 2nd drought drying phase; light blue curve indicates the fitting curve of the 2nd drought wetting phase; Triangles indicate drought onsets; crosses indicate drought offsets; black and grey horizontal dotted lines indicate drought thresholds; dark red, orange and yellow bold solid lines indicate respectively extreme, moderate and low drought durations; red and orange asterisks indicate 1st and 2nd drought peaks respectively. (a): Wetting.Phase.Duration: (b): Monsoon.Peak; (c): Dry.Monsoon.Duration; (d): Mod.Monsoon.Duration; (e): Wet.Monsoon.Duration; (f): Monsoon.Peak.DOY."; **Figure_5:** Characterization of a four-year multiyear drought over the 2010-2014 period of the pixel -104.25,33.62. The black curve represents daily SOLDI values; red curves indicate onset phases; blue curves indicate offset phases; horizontal yellow, orange and red lines represent respectively the low, moderate and extreme drought durations. Red asterisks are drought peaks; triangles represent onsets; black crosses represent offsets; horizontal black and grey dashed lines are the drought thresholds. ; **Figure_6:** "Flowchart describing the processing of SOLDI data up to the final table."
   
   ### "SWC_example_files"
@@ -93,26 +93,26 @@ install.packages(c("terra", "lubridate", "tidyr", "phenofit", "parallel"))
 ```
 
 ## License
-This code is under the CC0 1.0 Universal license. See [LICENSE](LICENSE)for more details.
+This code is under the CC0 1.0 Universal license. See [LICENSE](LICENSE) for more details.
 
 
 ## Example
 - Define the working directory, where the SWC files are located
-- Select the SWC file(s) from which to extract facets
+- Select the SWC file(s) from which to extract the features
 - Define the output directory, where the final output DF_DRY_NAM files will will be located
 ```r
 #setwd("C:/Users/UM/DRY_NAM/SWC")
 setwd("C:/Users/bouss/Desktop/PhD/Data_Monsoon")
 
 # Define the output directory
-output_dir <- "C:/Users/bouss/Desktop/Data_Monsoon"
+output_dir <- "C:/Users/bouss/Desktop/Data_Monsoon/"
   
 # Load the files to process
-#files_to_process <-  c("")
+#files_to_process <-  c("SWC_-96.25,31.12.csv","SWC_-104.25,33.62.csv","SWC_-101.55,18.12.csv")
 ```
   
-- Execute the `1. Initializing the data frame` lines
-- Execute the `2. Load the functions` lines
+- Execute the `1. Initializing the data frame` command lines to create the table.
+- Execute the `2. Load the functions` commmand lines to load the functions.
 - Then decide whether to execute `3.a. Execute the functions with 'lapply'` or `3.b. Execute the functions with 'parallel'`.
 
 
@@ -122,6 +122,4 @@ output_dir <- "C:/Users/bouss/Desktop/Data_Monsoon"
 ## Contact
 ludwig.boussaroque@umontpellier.fr
 
-![R Version](https://img.shields.io/badge/R-4.2-blue)
-![Licence](https://img.shields.io/badge/Licence-MIT-green)
 
