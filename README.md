@@ -6,19 +6,22 @@ ref publication
 <!-- badges: end -->
 
 ## Project structure
-### Data
-Contains the 3 raw SWC daily values used in the reference article and applicable to the code as examples
-
-### DRY_NAM.R
-The code contains these main parts :
-- `1. Initializing the data frame`
-The final data frame is created
-- `2. Load the functions`
-The 2 functions necessary to execute the process. first one 'peakfunction' based on the RamanMP package (not available anymore) to detect the peaks of the drought & and the second one 'process_file' to extract the drought facets
-- `3.a. Execute the functions with 'lapply'`
-To execute the functions in a simple way
-- `3.b. Execute the functions with 'parallel'`
-To execute the functions in a parallel way
+  ### Images
+  Contains images on the code process and drought features.
+  
+  ### SWC_example_files
+  Contains the 3 raw SWC daily values used in the reference article and applicable to the code as examples.
+  
+  ### DRY_NAM_2026_03_05.R
+  The code contains these main parts :
+  - `1. Initializing the data frame`
+  The final data frame is created
+  - `2. Load the functions`
+  The 2 functions necessary to execute the process. first one 'peakfunction' based on the RamanMP package (not available anymore) to detect the peaks of the drought & and the second one 'process_file' to extract the drought facets
+  - `3.a. Execute the functions with 'lapply'`
+  To execute the functions in a simple way
+  - `3.b. Execute the functions with 'parallel'`
+  To execute the functions in a parallel way
 
 ## DRY_NAM.R code description
 The code attached (file name.R) extracts 45 yearly drought facets (see Table below) from a model-based solar radiation-derived daily drought index (called SOLDI) whether the drought isuni modal or bimodal. This code has been applied on the North American Monsoon region over 1960-2024 where the data can be find here : Zenodo link 
@@ -77,7 +80,7 @@ Reference publication : data paper link
 ## Pre requisites
 The code has been created with:
 - **R** (version 4.4.1 (2024-06-14))
-- **Paquets R** :
+- **R Packages** :
   - `terra` (1.8-54)
   - `lubridate` (1.9.4)
   - `tidyr` (1.3.1)
@@ -90,9 +93,7 @@ install.packages(c("terra", "lubridate", "tidyr", "phenofit", "parallel"))
 ```
 
 ## License
-This code is ...
-### License
-Ce projet est sous licence **MIT**. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+This code is under the CC0 1.0 Universal license. See [LICENSE](LICENSE)for more details.
 
 
 ## Example
@@ -112,7 +113,7 @@ output_dir <- "C:/Users/bouss/Desktop/"
   
 - Execute the `1. Initializing the data frame`
 - Execute the `2. Load the functions`
-- Then execute wether `3.a. Execute the functions with 'lapply'` or `3.b. Execute the functions with 'parallel'` wether 
+- Then decide whether to execute `3.a. Execute the functions with 'lapply'` or `3.b. Execute the functions with 'parallel'`.
 
 
 ## Citation
