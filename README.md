@@ -92,10 +92,6 @@ To install packages:
 install.packages(c("terra", "lubridate", "tidyr", "phenofit", "parallel"))
 ```
 
-## License
-This code is under the CC0 1.0 Universal license. See [LICENSE](LICENSE) for more details.
-
-
 ## Example
 - Define the working directory, where the SWC files are located
 - Select the SWC file(s) from which to extract the features
@@ -115,6 +111,8 @@ output_dir <- "C:/Users/bouss/Desktop/Data_Monsoon/"
 - Execute the `2. Load the functions` commmand lines to load the functions.
 - Then decide whether to execute `3.a. Execute the functions with 'lapply'` or `3.b. Execute the functions with 'parallel'`.
 
+## License
+This code is under the CC0 1.0 Universal license. See [LICENSE](LICENSE) for more details.
 
 ## Reference data descriptor
 **Data paper link**
