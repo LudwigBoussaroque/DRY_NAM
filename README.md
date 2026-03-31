@@ -7,7 +7,7 @@ ref publication
 
 ## Project structure
   ### Images
-  Contains images on the code process and drought features.
+  Contains images on the code process and drought features. Figure_3: "SOLar radiation-driven Drought Index (SOLDI) time series and LOESS smoothing as a function of day of the year for the year 2012 of the pixel (-96.25,31.12). Black lines show daily SOLDI values; the red line is the corresponding LOESS smoothing curve, and asterisks indicate the detected peaks by the code." ; FIgure_4: ; FIgure_5
   
   ### SWC_example_files
   Contains the 3 raw SWC daily values used in the reference article and applicable to the code as examples.
