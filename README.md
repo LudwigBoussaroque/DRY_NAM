@@ -87,7 +87,7 @@ The code has been created with:
   - `tidyr` (1.3.1)
   - `phenofit` (0.3.10)
   - `parallel`
-  - 
+    
 To install packages:
 ```r
 install.packages(c("terra", "lubridate", "tidyr", "phenofit", "parallel"))
@@ -115,8 +115,9 @@ output_dir <- "C:/Users/bouss/Desktop/Data_Monsoon/"
 ## License
 This code is under the CC0 1.0 Universal license. See [LICENSE](LICENSE) for more details.
 
-## Reference data descriptor
+## Reference data descriptor & dataset
 **Data paper link**
+**Dataset link**
 
 ## Contact
 ludwig.boussaroque@umontpellier.fr
