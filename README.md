@@ -116,8 +116,7 @@ output_dir <- "C:/Users/bouss/Desktop/Data_Monsoon/"
 This code is under the CC0 1.0 Universal license. See [LICENSE](LICENSE) for more details.
 
 ## Reference data descriptor & dataset
-**Data paper link**
-**Dataset link**
+(https://zenodo.org/records/19188566)
 
 ## Contact
 ludwig.boussaroque@umontpellier.fr
